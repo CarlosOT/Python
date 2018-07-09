@@ -1,0 +1,5 @@
+MakingSum = lambda numberList : sum(numberList)
+
+numberList = [1,2,3,4,5,6,7,8,9,10]
+Result = MakingSum(numberList)
+print(Result)
