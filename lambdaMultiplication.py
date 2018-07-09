@@ -1,6 +1,6 @@
 FunctionLambda = lambda item : item ** 2
 
-UserImput = int(input('Inser a value: '))
-Value = FunctionLambda(UserImput)
+UserInput = int(input('Inser a value: '))
+Value = FunctionLambda(UserInput)
 
-print(f"{UserImput} multiplied by 2 is {Value}")
+print(f"{UserInput} multiplied by 2 is {Value}")
