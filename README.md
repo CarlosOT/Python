@@ -1,2 +1,7 @@
-# Works in Python
-Esses são meus trabalhos com Python, porém ainda sou iniciante. No momento estou me dedicando a dominar cada tópico da linguagem, passo a passo.
+# Works in Python - Chapter 1 - July 9 2018
+
+PT
+Esses são meus trabalhos com Python. Ainda sou iniciante na linguagem, no momento estou me dedicando a dominar cada tópico da linguagem, passo a passo. A pouco tempo decidi publicar meus códigos no github, espero que essa semente possa dar frutos, esse é meu desejo.
+
+EN
+These are my works with Python. I'm still a beginner in the language, at the moment I am dedicating myself to mastering each topic of the language, step by step. Soon I decided to publish my codes on github, I hope this seed can bear fruit, this is my desire.
