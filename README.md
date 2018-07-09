@@ -1,4 +1,4 @@
-# Works in Python - July 2018
+# Works in Python 
 
 PT
 Esses são meus trabalhos com Python, ainda sou iniciante na linguagem. No momento estou me dedicando a dominar cada tópico da linguagem, passo a passo. A pouco tempo decidi publicar meus códigos no github, espero que essa semente possa dar frutos, esse é meu desejo.
