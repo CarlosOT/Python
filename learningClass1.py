@@ -1,4 +1,4 @@
-herois.py
+# arquivo herois.py
 
 class Heroi:
 
