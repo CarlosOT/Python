@@ -12,7 +12,10 @@ numeros.a = 3
 numeros.b = 2
 numeros.c = 1
 print(f'a:{numeros.a} b:{numeros.b} c:{numeros.c}\n')
-# agora o valor desses atributos são do próprio objeto
+# agora o objeto tem atributos com valores próprios
+
+print(f'a:{valor.a} b:{valor.b} c:{valor.c}\n')
+# o valor dos atributos da classes são os mesmos
 
 del numeros.a
 del numeros.b
