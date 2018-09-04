@@ -2,13 +2,13 @@ from classePessoa import Pessoa
 
 class Aluno(Pessoa):
 
-    def __init__(self,nome, sobrenome, dataNasc, nacionalidade, RA, curso,notaComportamento, frequencia):
+    def __init__(self,nome, sobrenome, dataNasc, nacionalidade, RA, curso,notaComportamento, frequenciaEscolar):
         Pessoa.__init__(self,nome,sobrenome,dataNasc,nacionalidade)
         self.RA = RA
         self.curso = curso
         self.materia = ''
         self.notaComportamento = notaComportamento
-        self.frequencia = frequencia
+        self.frequenciaEscolar = frequenciaEscolar
         self.listaNotas = []
         self.media = ''
         self.boletim = {}
@@ -66,11 +66,11 @@ class Aluno(Pessoa):
 
     def imprimeDadosAluno(self):
         print(f'\nNome: {self.nome} {self.sobrenome} / Nascimento: {self.dataNasc} / {self.nacionalidade}')
-        print(f'Curso: {self.curso} / RA: {self.RA} / Nota Comportamento: {self.notaComportamento} / Frequência: {self.frequencia}%')
+        print(f'Curso: {self.curso} / RA: {self.RA} / Nota Comportamento: {self.notaComportamento} / Frequência: {self.frequenciaEscolar}%')
                     
     
 
-'''
+
 
 nome = input('\nNome do aluno: ')
 sobrenome = input('Sobrenome: ')
@@ -79,12 +79,12 @@ Nacionalidade = input('Nacionalidade: ')
 RA = input('RA: ')
 curso = input('Curso: ')
 notaComportamento = input('Nota comportamento: ')
-frequencia = input('Frequência: ')
+frequenciaEscolar = input('Frequência: ')
 
 
-x = Aluno(nome, sobrenome, data_nascimento, Nacionalidade, RA, curso,notaComportamento, frequencia)
+x = Aluno(nome, sobrenome, data_nascimento, Nacionalidade, RA, curso,notaComportamento, frequenciaEscolar)
 x.LancarNotasAluno()
 x.imprimeDadosAluno()
 x.imprimeBoletim() 
 
-'''
+

@@ -1,12 +1,10 @@
-from classePessoa import Pessoa
+from classeAluno import Aluno
 
-class ExAluno(Pessoa):
-    def __init__(self,nome, sobrenome, dataNasc, nacionalidade,anoFormacao,cursoConcluido, frequenciaEscolar, comportamento,pegouDP):
-        Pessoa.__init__(self,nome, sobrenome, dataNasc, nacionalidade)
+class ExAluno(Aluno):
+    def __init__(self,nome, sobrenome, dataNasc, nacionalidade, RA, curso, notaComportamento, frequenciaEscolar, anoFormacao, pegouDP):
+        Aluno.__init__(self,nome, sobrenome, dataNasc, nacionalidade, RA, curso,notaComportamento, frequenciaEscolar)
         self.anoFormacao = anoFormacao
-        self.cursoConcluido = cursoConcluido
         self.frequenciaEscolar = frequenciaEscolar
-        self.comportamento = comportamento
         self.pegouDP = pegouDP
         self.materia = ''
         self.NotasExAluno = []
@@ -65,8 +63,9 @@ class ExAluno(Pessoa):
             print(f'{key} - {value:.2f}')
 
     def ImprimirDadosCompletos(self):
-        print(f'\nNome: {self.nome} {self.sobrenome} / Nascimento: {self.dataNasc} / Nacionalidade: {self.nacionalidade}')
-        print(f'Curso concluído: {self.cursoConcluido} / Nota Comportamento: {self.comportamento} / Frequência: {self.frequenciaEscolar}% / Pegou DP: {self.pegouDP} / Ano formação: {self.anoFormacao}')
+        print(f'\nNome: {self.nome} {self.sobrenome}\nNascimento: {self.dataNasc}\nNacionalidade: {self.nacionalidade}')
+        print(f'Curso concluído: {self.curso}\nRa: {self.RA}\nNota Comportamento: {self.notaComportamento}')
+        print(f'Frequência: {self.frequenciaEscolar}%\nPegou DP: {self.pegouDP}\nAno formação: {self.anoFormacao}')
 
 
 
@@ -74,14 +73,15 @@ class ExAluno(Pessoa):
 nome = input('nome: ')
 sobrenome = input('sobrenome: ')
 dataNasc = input('Data Nascimento: ')
-nacionalidade = input('Nacionalidade')
-anoFormacao = input('Ano formação: ')
-cursoConcluido = input('Curso concluído: ')
+nacionalidade = input('Nacionalidade: ')
+RA = input('RA: ')
+curso = input('Curso concluído: ')
+notaComportamento = input('Nota Comportamento: ')
 frequenciaEscolar = input('Frequência escolar: ')
-comportamento = input('Comportamento: ')
+anoFormacao = input('Ano formação: ')
 pegouDP = input('Pegou DP: ')
 
-z = ExAluno(nome, sobrenome, dataNasc, nacionalidade,anoFormacao,cursoConcluido, frequenciaEscolar, comportamento,pegouDP)
+z = ExAluno(nome, sobrenome, dataNasc, nacionalidade, RA, curso, notaComportamento, frequenciaEscolar, anoFormacao, pegouDP)
 
 z.LancarNotasExAluno()
 z.imprimeBoletimExAluno()
