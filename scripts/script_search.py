@@ -4,7 +4,7 @@ import shutil
 def readFile(directory, ContentSearch):
 	os.chdir('path') # ex. '/home/exemplo/Desktop/pastaPrincipal'
 	ListFile = os.listdir(directory)
-	os.chdir('./' + directory) # ex. '/home/exemplo/Desktop/pastaPrincipal/arquivo'
+	os.chdir('./' + directory) # ex. '/home/exemplo/Desktop/pastaPrincipal/arquivo '
 	for file in ListFile:
 		f = open(file)
 		content = f.read()
