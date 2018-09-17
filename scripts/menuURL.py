@@ -12,6 +12,9 @@ while True:
     5 - Facebook
     6 - Banco Inter
     7 - Phpmyadmin
+    8 - Udemy
+    9 - Alura
+    10 - Impacta
     
 ''')
     opcao = input('\nOpção:')
@@ -39,6 +42,12 @@ while True:
         inter = webbrowser.open('https://internetbanking.bancointer.com.br/cartao/consultarCartoes.jsf')
     elif opcao == '7':
         phpmyadmin = webbrowser.open('http://localhost/phpmyadmin/')
+    elif opcao == '8':
+        udemy = webbrowser.open('https://www.udemy.com/')
+    elif opcao == '9':
+        alura = webbrowser.open('https://www.alura.com.br/')
+    elif opcao == '10':
+        impacta = webbrowser.open('https://www.impacta.edu.br/')
     else:
         print('\n!!! Inválido !!!\n')
         continue
