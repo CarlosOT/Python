@@ -1,6 +1,6 @@
 while True:
 	entrada = input('Entrada: ')
-	if len(entrada) == 0:
+	if entrada == '':
 		continue
 	if entrada == '0':
 		break
