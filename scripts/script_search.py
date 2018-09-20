@@ -2,7 +2,7 @@ import os
 import shutil
 
 def readFile(PrincipalFolder, directory, ContentSearch, destination):
-	os.chdir('/home/carlos/Desktop/'+ PrincipalFolder)
+	os.chdir(currentPath + PrincipalFolder)
 	ListFile = os.listdir(directory)
 	os.chdir('./' + directory) 
 	for file in ListFile:
@@ -39,7 +39,7 @@ while True:
 		exit()
 	else:
 		for directory in directories:
-			readFile(PrincipalFolder, directory, ContentSearch, destination)
+			readFile(currentPath, PrincipalFolder, directory, ContentSearch, destination)
 
 
 
