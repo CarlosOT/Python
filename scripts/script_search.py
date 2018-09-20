@@ -1,7 +1,7 @@
 import os
 import shutil
 
-def readFile(PrincipalFolder, directory, ContentSearch, destination):
+def readFile(currentPath, PrincipalFolder, directory, ContentSearch, destination):
 	os.chdir(currentPath + PrincipalFolder)
 	ListFile = os.listdir(directory)
 	os.chdir('./' + directory) 
