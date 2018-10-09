@@ -2,6 +2,7 @@ import random, webbrowser, time
 
 print('\nAperte "00" para sair a qualquer momento\n')
 while True:
+    print('\n Query gerada')
     print('\n'+ ('+---' * 7) + '+\n')
     nome = ''
     letras = 'ABCDEFGHIJMNOPQRSTUVWXYZ'
