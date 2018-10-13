@@ -51,6 +51,7 @@ while True:
     horas    = random.randint(0, 23)
     minutos  = random.randint(0, 59)
     segundos = random.randint(0, 59)
+    
     if mes < 10:
         mes = str(mes)
         mes = f'0{mes}'
