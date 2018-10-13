@@ -14,6 +14,7 @@ while True:
     horas    = random.randint(0, 23)
     minutos  = random.randint(0, 59)
     segundos = random.randint(0, 59)
+    
     if mes < 10:
         mes = str(mes)
         mes = f'0{mes}'
@@ -37,6 +38,7 @@ while True:
         segundos = f'0{segundos}'
     else:
         segundos = str(segundos)
+        
     data_hora_conexao = f'{ano}-{mes}-{dia} {horas}:{minutos}:{segundos}'
     id_dispositivo = random.randint(1, 22)
     id_access_point = random.choice(IdsAccessPoints)
@@ -72,6 +74,7 @@ while True:
         segundos = f'0{segundos}'
     else:
         segundos = str(segundos)
+        
     criado_em = f'{ano}-{mes}-{dia} {horas}:{minutos}:{segundos}'
 
     content = (f"insert into nethoog.tbl_dispositivos_conexoes values(null,'{id_dispositivo}','{id_access_point}','{status}', null, null, '{data_hora_conexao}', null,'{tempo_conexao}','{criado_em}');\n")
@@ -87,6 +90,7 @@ while True:
         break
     else:
         exit()
+        
 webbrowser.open_new_tab('insert_into.sql')
 time.sleep(1)
 arquivo = open('insert_into.sql','w')
